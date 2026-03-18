@@ -4,7 +4,7 @@ public class Ball {
     private int radius;
     private float xDelta;
     private float yDelta;
-
+    // Constructor de clase
     public Ball(float x, float y, int radius, float xDelta, float yDelta){
         this.x = x;
         this.y = y;
@@ -12,6 +12,7 @@ public class Ball {
         this.xDelta = xDelta;
         this.yDelta = yDelta;
     }
+    // Getters y Setters
     public float getX() {
         return x;
     }
@@ -42,6 +43,7 @@ public class Ball {
     public void setYDelta(float newYDelta){
         yDelta = newYDelta;
     }
+    // Métodos de movimiento
     public void move(){
         x += xDelta;
         y += yDelta;
