@@ -2,7 +2,7 @@ public class Account {
     private String id;
     private String name;
     private int balance = 0;
-
+    // Constructores de clase
     public Account(String id, String name) {
         this.id = id;
         this.name = name;
@@ -12,6 +12,7 @@ public class Account {
         this.name = name;
         this.balance = balance;
     }
+    // Getters
     public String getId() {
         return id;
     }
@@ -21,10 +22,12 @@ public class Account {
     public int getBalance() {
         return balance;
     }
+    // Añadimos la cantidad que queramos al balance actual
     public int credit(int amount) {
         balance = balance + amount;
         return balance;
     }
+    // Eliminamos la cantidad que queramos al balance actual
     public int debit(int amount) {
         if (amount <= balance) {
                 balance -= amount;
@@ -33,6 +36,7 @@ public class Account {
         }
         return balance;
     }
+    // Transferimos la cantidad que queramos a otra cuenta
     public int transferTo(Account another, int amount) {
         if (amount <= this.balance) {
             this.balance -= amount;
