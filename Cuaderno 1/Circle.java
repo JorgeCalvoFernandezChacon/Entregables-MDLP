@@ -1,17 +1,14 @@
 public class Circle {
     private double radius = 1.0;
 
-    /**
-     * Constructor por defecto
-     */
+    // Constructores de clase
     public Circle() {
     }
-    /**
-     * Constructor given de radius
-     */
     public Circle(double radius) {
         this.radius = radius;
     }
+
+    // Getters y Setters
     public double getRadius() {
         return radius;
     }
