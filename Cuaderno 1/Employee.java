@@ -4,15 +4,15 @@ public class Employee {
     private String lastName;
     private int salary;
 
-    /**
-     * Constructor dado los parámetros
-     */
+    // Constructor de clase
     public Employee(int id, String firstName, String lastName, int salary) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
     }
+
+    // Getters y Setters
     public int getId() {
         return id;
     }
@@ -34,6 +34,8 @@ public class Employee {
     public int getAnnualSalary() {
         return salary * 12;
     }
+
+    // Aumentamos el salario multiplicandolo por un porcentaje
     public int raiseSalary(int percent) {
         salary = salary + (salary*percent/100);
         return salary;
