@@ -2,9 +2,7 @@ public class Rectangle {
     private float length;
     private float width;
 
-    /**
-     * Constructor por defecto
-     */
+    // Constructor de clase
     public Rectangle() {
         length = 1.0f;
         width = 1.0f;
@@ -13,6 +11,8 @@ public class Rectangle {
         this.length = length;
         this.width = width;
     }
+
+    // Getters y Setters
     public float getLength() {
         return length;
     }
@@ -31,6 +31,7 @@ public class Rectangle {
     public double getPerimeter() {
         return 2 * length + 2 * width;
     }
+    
     public String toString() {
         return "Rectangle[length=" + length + ",width=" + width + "]";
     }
