@@ -1,16 +1,16 @@
-package es.uah.matcomp.mp.e1.ejerciciosClases.time;
-
 public class Time {
     private int hour;
     private int minute;
     private int second;
 
+    // Constructor de clase
     public Time(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
 
+    // Getters y Setters
     public int getHour() { return hour; }
     public int getMinute() { return minute; }
     public int getSecond() { return second; }
@@ -29,6 +29,7 @@ public class Time {
         return String.format("%02d:%02d:%02d", hour, minute, second);
     }
 
+    // Calculamos el siguiente segundo teniendo en cuenta la hora en la que estamos
     public Time nextSecond() {
         second++;
         if (second >= 60) {
@@ -45,6 +46,7 @@ public class Time {
         return this;
     }
 
+    // Calculamos el segundo anterior teniendo en cuenta la hora en la que estamos
     public Time previousSecond() {
         second--;
         if (second < 0) {
